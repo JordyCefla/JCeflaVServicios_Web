@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JCeflaVServicios_Web.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Servicios Web" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <ListView x:Name="Lista">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ViewCell>
+                        <StackLayout>
+                        <Label x:Name="lblNombre" Text="{Binding nombre}">
+                        
+                           
+                        </Label>
+                        
+                        <Label x:Name="lblCorreo" Text="{Binding correo}">
+
+
+                        </Label>
+                           
+                            
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+                
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="btnRegistro" Text="Registrar" Clicked="btnRegistro_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>

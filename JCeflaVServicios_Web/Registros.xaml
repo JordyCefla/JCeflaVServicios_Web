@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JCeflaVServicios_Web.Registros">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro de Usuarios">
+                             
+            </Label>
+            <Entry x:Name="txtID" Placeholder="ID" />
+            <Entry x:Name="txtNombre" Placeholder="Ingrese Nombre" />
+            <Entry x:Name="txtCorreo" Placeholder="Ingrese Correo" />
+            <Entry x:Name="txtContrasena" Placeholder="Ingrese Contraseña" />
+            <Entry x:Name="txtNivel" Placeholder="Ingrese Nivel de Acceso" />
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition>
+                        
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked_1" Grid.Row="1" Grid.Column="0"/>
+                <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" Grid.Row="2" Grid.Column="0"/>
+
+            </Grid>
+            
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
